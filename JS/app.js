@@ -5,8 +5,11 @@ let todolist = [
     {todo: 'work on JS', status: 'started'}
 ]
 
-let completedTodos = {}
+let completedTodos = []
 
+for ( i in todolist) {
+    if (todolist[i].status === 'complete')
+    completedTodos.push(todolist[i])
+}
 
-
-console.log(todolist)
+console.log(completedTodos)
