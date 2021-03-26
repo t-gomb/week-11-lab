@@ -12,4 +12,14 @@ for ( i in todolist) {
     completedTodos.push(todolist[i])
 }
 
+
+for (i in completedTodos) {
+    if (completedTodos[i].todo === '')
+    completedTodos.push(completedTodos[i])
+}
+
+for ({todo} of completedTodos) {
+    console.log(todo)
+}
+
 console.log(completedTodos)
